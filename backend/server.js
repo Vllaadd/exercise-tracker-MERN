@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json());
 
+
 // MONGO CONNECTION ----------------------------------------------------
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
